@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Twitch-Hangman-Server</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Admin interface</h1>
+
+        <p>Use this to manage the server</p>
+        <table id="table" style="text-align: center;">
+            <tr>
+                <th>ID</th>
+                <th>Channel</th>
+                <th>Currently connected</th>
+                <th>Delete?</th>
+            </tr>
+            {{range .Channels}}{{.}}{{end}}
+        </table>
+        <input type="submit" value="Delete IDs" onclick="deleteUniqueIDs()"/>
+        <input type="submit" value="Delete all IDs"  onclick="deleteAllIDs()"/>
+
+        <p>Do you want to generate more IDs?</p>
+        <label for="channel">Twitch channel you want to generate the ID for:</label>
+        <input type="text" id="channel" name="IDs" />
+        <input type="submit" value="Generate ID" onclick="generateID()" />
+        <script src="script.js" defer></script>
+    </body>
+</html>

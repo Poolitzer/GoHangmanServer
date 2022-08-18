@@ -1,0 +1,10 @@
+{
+  "host": "localhost",
+  "port": "8080",
+  "url": "http://localhost:8080",
+  "name": "Poolitzer",
+  "contact": "<a href=\"https://poolitzer.eu#contact\">various ways, found on this website</a>",
+  "admin_key": "AnExposedKey",
+  "twitch_username": "gohangmanbot",
+  "twitch_code": "123abc456def",
+}
