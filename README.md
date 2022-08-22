@@ -8,6 +8,8 @@ Generate the bot account token by using the OAuth flow from the [twitch docs](ht
 
 I export executables for windows and linux currently, if you need another OS which is supported by [Go](https://go.dev/), make an issue and I will include it.
 
+You open the admin page by adding `/admin?admin_key=YOURKEY` behind the URL you host the instance at.
+
 ## License
 
 This project is licensed under the GNU General Public License v3.0. You may copy, distribute and modify the software provided that modifications are described and licensed for free under [GPL-3](LICENSE).
