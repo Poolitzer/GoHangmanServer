@@ -40,7 +40,7 @@ function deleteUniqueIDs() {
     let table = document.getElementById("table")
     let clientsURlstring = "";
     for (let i = 1; i < table.rows.length; i++) {
-        if (table.rows[i].cells[2].children[0].checked === true) {
+        if (table.rows[i].cells[3].children[0].checked === true) {
             clientsURlstring = clientsURlstring  + "&clients=" + table.rows[i].cells[0].innerText;
         }
     }
